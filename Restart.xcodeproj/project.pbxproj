@@ -56,7 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				F4F8ED02272A31F500F578E6 /* RestartApp.swift */,
-				F4F8ED04272A31F500F578E6 /* ContentView.swift */,
+				F4F8ED16272A34A600F578E6 /* Views */,
+				F4F8ED15272A348400F578E6 /* Screens */,
+				F4F8ED17272A34BC00F578E6 /* Utilities */,
 				F4F8ED14272A333F00F578E6 /* Sounds */,
 				F4F8ED06272A31F600F578E6 /* Assets.xcassets */,
 				F4F8ED08272A31F600F578E6 /* Preview Content */,
@@ -79,6 +81,28 @@
 				F4F8ED10272A332A00F578E6 /* success.m4a */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		F4F8ED15272A348400F578E6 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F4F8ED04272A31F500F578E6 /* ContentView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F4F8ED16272A34A600F578E6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F4F8ED17272A34BC00F578E6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
