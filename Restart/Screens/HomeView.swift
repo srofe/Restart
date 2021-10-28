@@ -8,9 +8,18 @@
 import SwiftUI
 
 struct HomeView: View {
+    @AppStorage("onboarding") var isOnboardingViewActive: Bool = false
+
     var body: some View {
-        Text("Home View")
-            .font(.largeTitle)
+        VStack {
+            Text("Home View")
+                .font(.largeTitle)
+            Button(action: {
+                isOnboardingViewActive = true
+            }) {
+                Text("Restart")
+            }
+        }
     }
 }
 
