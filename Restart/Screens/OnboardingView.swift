@@ -44,7 +44,15 @@ struct OnboardingView: View {
                             .scaledToFit()
                     }
                 }
-                Spacer()
+                ZStack {
+                    Capsule()
+                        .fill(Color.white.opacity(0.2))
+                    Capsule()
+                        .fill(Color.white.opacity(0.2))
+                        .padding(8)
+                }
+                .frame(height: 80, alignment: .center)
+                .padding()
             }
         }
     }
