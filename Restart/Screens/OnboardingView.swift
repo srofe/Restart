@@ -50,6 +50,21 @@ struct OnboardingView: View {
                     Capsule()
                         .fill(Color.white.opacity(0.2))
                         .padding(8)
+                    HStack {
+                        Capsule()
+                            .fill(Color("ColourRed"))
+                            .frame(width: 80)
+                            Spacer()
+                    }
+                    ZStack {
+                        Circle()
+                            .fill(Color("ColourRed"))
+                        Circle()
+                            .fill(.black.opacity(0.15))
+                            .padding(8)
+                    }
+                    .foregroundColor(.white)
+                    .frame(width: 80, height: 80, alignment: .center)
                 }
                 .frame(height: 80, alignment: .center)
                 .padding()
