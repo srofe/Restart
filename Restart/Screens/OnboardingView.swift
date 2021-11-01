@@ -56,17 +56,20 @@ struct OnboardingView: View {
                             .frame(width: 80)
                             Spacer()
                     }
-                    ZStack {
-                        Circle()
-                            .fill(Color("ColourRed"))
-                        Circle()
-                            .fill(.black.opacity(0.15))
-                            .padding(8)
-                        Image(systemName: "chevron.right.2")
-                            .font(.system(size: 24, weight: .bold))
+                    HStack {
+                        ZStack {
+                            Circle()
+                                .fill(Color("ColourRed"))
+                            Circle()
+                                .fill(.black.opacity(0.15))
+                                .padding(8)
+                            Image(systemName: "chevron.right.2")
+                                .font(.system(size: 24, weight: .bold))
+                        }
+                        .foregroundColor(.white)
+                        .frame(width: 80, height: 80, alignment: .center)
+                        Spacer()
                     }
-                    .foregroundColor(.white)
-                    .frame(width: 80, height: 80, alignment: .center)
                 }
                 .frame(height: 80, alignment: .center)
                 .padding()
