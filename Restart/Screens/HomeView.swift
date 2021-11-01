@@ -11,7 +11,18 @@ struct HomeView: View {
     @AppStorage("onboarding") var isOnboardingViewActive: Bool = false
 
     var body: some View {
-        VStack {
+        VStack(spacing: 20) {
+            Spacer()
+            Image("character-2")
+                .resizable()
+                .scaledToFit()
+                .padding()
+            Text("The time that leads to mastery is dependent on the intensity of our focus.")
+                .font(.title3)
+                .fontWeight(.light)
+                .foregroundColor(.secondary)
+                .multilineTextAlignment(.center)
+                .padding()
             Text("Home View")
                 .font(.largeTitle)
             Button(action: {
