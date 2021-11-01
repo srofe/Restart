@@ -14,18 +14,7 @@ struct HomeView: View {
         VStack(spacing: 20) {
             header
             centre
-            Button(action: {
-                isOnboardingViewActive = true
-            }) {
-                Image(systemName: "arrow.triangle.2.circlepath.circle.fill")
-                    .imageScale(.large)
-                Text("Restart")
-                    .font(.system(.title3, design: .rounded))
-                    .fontWeight(.bold)
-            }
-            .buttonStyle(.borderedProminent)
-            .buttonBorderShape(.capsule)
-            .controlSize(.large)
+            footer
         }
     }
 
@@ -37,7 +26,7 @@ struct HomeView: View {
                 Image("character-2")
                     .resizable()
                     .scaledToFit()
-                .padding()
+                    .padding()
             }
         }
     }
@@ -52,6 +41,21 @@ struct HomeView: View {
                 .padding()
             Spacer()
         }
+    }
+
+    fileprivate var footer: some View {
+        Button(action: {
+            isOnboardingViewActive = true
+        }) {
+            Image(systemName: "arrow.triangle.2.circlepath.circle.fill")
+                .imageScale(.large)
+            Text("Restart")
+                .font(.system(.title3, design: .rounded))
+                .fontWeight(.bold)
+        }
+        .buttonStyle(.borderedProminent)
+        .buttonBorderShape(.capsule)
+        .controlSize(.large)
     }
 }
 
