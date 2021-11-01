@@ -50,6 +50,11 @@ struct OnboardingView: View {
                     Capsule()
                         .fill(Color.white.opacity(0.2))
                         .padding(8)
+                    Text("Get Started")
+                        .font(.system(.title3, design: .rounded))
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                        .offset(x: 20)
                     HStack {
                         Capsule()
                             .fill(Color("ColourRed"))
