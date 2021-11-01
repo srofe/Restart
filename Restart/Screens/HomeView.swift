@@ -13,13 +13,7 @@ struct HomeView: View {
     var body: some View {
         VStack(spacing: 20) {
             header
-            Text("The time that leads to mastery is dependent on the intensity of our focus.")
-                .font(.title3)
-                .fontWeight(.light)
-                .foregroundColor(.secondary)
-                .multilineTextAlignment(.center)
-                .padding()
-            Spacer()
+            centre
             Button(action: {
                 isOnboardingViewActive = true
             }) {
@@ -45,6 +39,18 @@ struct HomeView: View {
                     .scaledToFit()
                 .padding()
             }
+        }
+    }
+
+    fileprivate var centre: some View {
+        Group {
+            Text("The time that leads to mastery is dependent on the intensity of our focus.")
+                .font(.title3)
+                .fontWeight(.light)
+                .foregroundColor(.secondary)
+                .multilineTextAlignment(.center)
+                .padding()
+            Spacer()
         }
     }
 }
