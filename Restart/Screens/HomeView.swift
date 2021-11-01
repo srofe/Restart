@@ -23,13 +23,19 @@ struct HomeView: View {
                 .foregroundColor(.secondary)
                 .multilineTextAlignment(.center)
                 .padding()
-            Text("Home View")
-                .font(.largeTitle)
+            Spacer()
             Button(action: {
                 isOnboardingViewActive = true
             }) {
+                Image(systemName: "arrow.triangle.2.circlepath.circle.fill")
+                    .imageScale(.large)
                 Text("Restart")
+                    .font(.system(.title3, design: .rounded))
+                    .fontWeight(.bold)
             }
+            .buttonStyle(.borderedProminent)
+            .buttonBorderShape(.capsule)
+            .controlSize(.large)
         }
     }
 }
