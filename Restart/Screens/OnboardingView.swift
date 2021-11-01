@@ -45,7 +45,7 @@ struct OnboardingView: View {
 
     fileprivate var centre: some View {
         ZStack {
-            CircleGroupView()
+            CircleGroupView(shapeColour: .white, shapeOpacity: 0.2)
             Image("character-1")
                 .resizable()
                 .scaledToFit()
